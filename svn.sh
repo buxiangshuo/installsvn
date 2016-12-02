@@ -44,24 +44,24 @@ Cpunum=`cat /proc/cpuinfo | grep 'processor' | wc -l`;
 function install_svnadmin(){
     rootness
     disable_selinux
-	  disable_iptables
+    disable_iptables
     pre_installation_settings
     untar_all_files
-	  install_apr
-	  install_apr-util
-	  install_zlib
+    install_apr
+    install_apr-util
+    install_zlib
     install_pcre
-	  install_neno
-	  install_sqlite
+    install_neno
+    install_sqlite
     install_apache
     install_database
     install_libiconv
     install_libmcrypt
     install_libedit
     install_imap
-	  install_jdk
-	  install_svn
-	  install_tomcat
+    install_jdk
+    install_svn
+    install_tomcat
 }
 
 # is 64bit or not
